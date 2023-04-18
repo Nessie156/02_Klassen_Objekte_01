@@ -7,9 +7,18 @@ public class App {
         /* Instanziierung Klasse --> Objekt */
         // Cat -- Referenztyp
         // cat -- Referenzvariable
-        
-        Cat cat = new Cat();
-        System.out.println(cat);
+
+        Cat cat1 = new Cat();
+        System.out.println(cat1);
+        cat1.tellYourAddress();
+
+        Cat cat2 = new Cat();
+        System.out.println(cat2);
+        cat2.tellYourAddress();
+
+
+
+
 
     }
 
