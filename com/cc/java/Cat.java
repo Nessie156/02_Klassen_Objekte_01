@@ -12,4 +12,7 @@ public class Cat {
        return "Blick von innen: " + this;
     }
 
+
+    
+
 }
