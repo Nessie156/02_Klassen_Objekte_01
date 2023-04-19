@@ -12,11 +12,20 @@ public class App {
         output("Blick von aussen: " + cat1);
         output(cat1.tellYourAddress());
 
-        output("--------------------");
+        output(cat1.name);
+        output(cat1.furColor);
 
-        Cat cat2 = new Cat();
-        output("Blick von aussen: " + cat2);
-        output(cat2.tellYourAddress());
+        // int --> String | 2 --> "2"
+        output(Integer.toString(cat1.age));
+        // output(String.valueOf(2));
+        // output(Integer.toString(2));
+
+
+        // output("--------------------");
+
+        // Cat cat2 = new Cat();
+        // output("Blick von aussen: " + cat2);
+        // output(cat2.tellYourAddress());
 
 
     }
