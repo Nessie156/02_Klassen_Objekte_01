@@ -24,4 +24,20 @@ public class Cat {
         return this.age;
     }
 
+
+    public void changeName(String name) {
+        this.name = name;
+    }
+
+    public void changeFurColor(String furColor) {
+        this.furColor = furColor;
+    }
+
+    public void changeAge(int age) {
+        this.age = age;
+    }
+
+
+
+
 }

@@ -13,9 +13,13 @@ public class App {
         output(cat1.tellYourAddress());
 
         // Wertzuweisung
-        cat1.name = "Grizabella";
-        cat1.furColor = "white";
-        cat1.age = 29;
+        
+        cat1.changeName("Grizabella");
+        cat1.changeFurColor("white");
+        cat1.changeAge(29);
+
+        // Designschwäche !!!!!
+        cat1.furColor = "grey";
 
         // Ausgabe
         output(cat1.tellYourName());
@@ -29,9 +33,9 @@ public class App {
         output(cat2.tellYourAddress());
 
         // Wertzuweisung
-        cat2.name = "Alonzo";
-        cat2.furColor = "grey";
-        cat2.age = 35;
+        cat2.changeName("Alonzo");
+        cat2.changeFurColor("grey");
+        cat2.changeAge(35);
 
         output(cat2.tellYourName());
         output(cat2.tellYourFurColor());
