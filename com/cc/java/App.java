@@ -8,38 +8,20 @@ public class App {
         // Cat -- Referenztyp
         // cat -- Referenzvariable
 
-        Cat cat1 = new Cat();
-        output("Blick von aussen: " + cat1);
-        output(cat1.tellYourAddress());
-
-        // Wertzuweisung
-        
-        cat1.changeName("Grizabella");
-        cat1.changeFurColor("white");
-        cat1.changeAge(29);
-
-        // Designschwäche !!!!!
-        cat1.furColor = "grey";
-
+        Cat cat1 = new Cat("Grizabella", "white", 29);
+   
         // Ausgabe
-        output(cat1.tellYourName());
-        output(cat1.tellYourFurColor());
-        output(Integer.toString(cat1.tellYourAge()));
+        output(cat1.getName());
+        output(cat1.getFurColor());
+        output(Integer.toString(cat1.getAge()));
 
         output("--------------------");
 
-        Cat cat2 = new Cat();
-        output("Blick von aussen: " + cat2);
-        output(cat2.tellYourAddress());
+        Cat cat2 = new Cat("Alonzo", "grey", 35);
 
-        // Wertzuweisung
-        cat2.changeName("Alonzo");
-        cat2.changeFurColor("grey");
-        cat2.changeAge(35);
-
-        output(cat2.tellYourName());
-        output(cat2.tellYourFurColor());
-        output(Integer.toString(cat2.tellYourAge()));
+        output(cat2.getName());
+        output(cat2.getFurColor());
+        output(Integer.toString(cat2.getAge()));
 
 
     }
