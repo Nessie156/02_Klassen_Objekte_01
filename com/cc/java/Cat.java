@@ -14,7 +14,11 @@ public class Cat {
     }
 
     public String getName() {
-        return name;
+        if (checkPermission()) { // Delegation an Methode ...
+            return name; 
+        } else {
+            return "Sorry, no permission!";
+        }
     }
 
     public void setName(String name) {
@@ -37,8 +41,11 @@ public class Cat {
         this.age = age;
     }
 
-    
-
+   
+    // private, weil call aus der EIGENEN Klasse/Objekt
+    private boolean checkPermission() {
+        return false;
+    }
    
 
 
