@@ -26,7 +26,7 @@ public class App {
 
     }
 
-    public static void output(String outStr) {
+    private static void output(String outStr) {
       System.out.println(outStr);
     }
    
